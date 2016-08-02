@@ -4,7 +4,9 @@
   "description": "A minimal Electron application",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "electron-rebuild": "rm node_modules\\nslog\\build\\Release\\nslog.node && electron-rebuild ",
+    "package": "node package.js"
   },
   "repository": {
     "type": "git",
@@ -23,6 +25,11 @@
   },
   "homepage": "https://github.com/electron/electron-quick-start#readme",
   "devDependencies": {
-    "electron-prebuilt": "^1.2.0"
+    "electron-prebuilt": "1.1.1",
+    "electron-rebuild": "1.1.5",
+    "electron-packager": "^7.4.0"
+  },
+  "dependencies": {
+    "edge-atom-shell": "^5.0.1"
   }
 }
